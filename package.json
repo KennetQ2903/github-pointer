@@ -15,10 +15,33 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-native": "0.68.2",
-    "react-native-web": "0.17.7"
+    "react-native-web": "0.17.7",
+    "react-router-native": "5.2.0",
+    "webpack-dev-server": "~3.11.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.18.2",
+    "@expo/webpack-config": "^0.16.24",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "^8.2.5",
+    "eslint": "8.16.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-config-standard-jsx": "11.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "6.0.0",
+    "eslint-plugin-react": "7.30.0",
+    "webpack": "^4.43.0"
   },
-  "private": true
+  "private": true,
+  "eslintConfig": {
+    "extends": [
+      "standard",
+      "standard-jsx"
+    ],
+    "rules": {
+      "react/prop-types": "off"
+    }
+  }
 }
