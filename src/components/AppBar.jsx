@@ -19,7 +19,11 @@ const AppBarTab = ({ children, to, icon }) => {
 
   const icons = {
     home: !active ? require('../../assets/icons/home.png') : require('../../assets/icons/homeActive.png'),
-    user: !active ? require('../../assets/icons/userInactive.png') : require('../../assets/icons/userActive.png')
+    user: !active ? require('../../assets/icons/userInactive.png') : require('../../assets/icons/userActive.png'),
+    heart: !active ? require('../../assets/icons/heartInactive.png') : require('../../assets/icons/heart.png'),
+    account: !active ? require('../../assets/icons/profileInactive.png') : require('../../assets/icons/profile.png'),
+    config: !active ? require('../../assets/icons/gearInactive.png') : require('../../assets/icons/gear.png')
+
   }
 
   // const icons = icon === 'home' && !active ? require('../../assets/icons/home.png') : require('../../assets/icons/homeActive.png')
@@ -52,6 +56,18 @@ export const AppBar = () => {
 
         <AppBarTab icon='user' to='/signin'>
           Signin
+        </AppBarTab>
+
+        <AppBarTab icon='heart' to='/Fav'>
+          Favorites
+        </AppBarTab>
+
+        <AppBarTab icon='account' to='/Account'>
+          Account
+        </AppBarTab>
+
+        <AppBarTab icon='config' to='/Config'>
+          Config
         </AppBarTab>
 
       </ScrollView>

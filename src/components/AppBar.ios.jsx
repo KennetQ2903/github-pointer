@@ -32,6 +32,19 @@ export const AppBar = () => {
         <AppBarTab to='/signin'>
           Signin
         </AppBarTab>
+
+        <AppBarTab to='/'>
+          Account
+        </AppBarTab>
+
+        <AppBarTab to='/signin'>
+          Favorites
+        </AppBarTab>
+
+        <AppBarTab to='/'>
+          Config
+        </AppBarTab>
+
       </ScrollView>
     </View>
   )
